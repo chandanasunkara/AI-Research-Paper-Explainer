@@ -8,7 +8,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-[#1a2332]/10 bg-[#FAFAF7]/95 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-4xl items-center justify-between px-4">
         <span className="font-heading text-lg font-semibold text-[#1a2332]">
-          🧠 PaperTranslator
+          🧠 PaperExplainer
         </span>
         <Link
           href="https://github.com"

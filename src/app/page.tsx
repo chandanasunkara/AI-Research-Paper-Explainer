@@ -36,48 +36,40 @@ export default function Home() {
             Upload any research paper and get an instant, student-friendly
             breakdown
           </p>
-          <div className="mt-10">
-            <FileUpload onResult={handleResult} />
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="mt-16"
-        >
-          <h2 className="font-heading text-xl font-semibold text-[#1a2332] mb-6 text-center">
+          <h2 className="font-heading text-lg font-semibold text-[#1a2332] mb-2 text-center">
             How it works
           </h2>
-          <div className="grid gap-6 sm:grid-cols-3">
-            <div className="flex flex-col items-center rounded-xl border border-[#1a2332]/10 bg-white/60 p-6 text-center">
-              <FileUp className="h-10 w-10 text-[#1a2332] mb-3" />
-              <h3 className="font-heading font-semibold text-[#1a2332]">
+          <div className="grid gap-3 sm:grid-cols-3 max-w-xl mx-auto">
+            <div className="flex flex-col items-center rounded-lg border border-[#1a2332]/10 bg-white/60 p-4 text-center">
+              <FileUp className="h-5 w-5 text-[#1a2332] mb-2" />
+              <h3 className="font-heading text-sm font-semibold text-[#1a2332]">
                 Upload PDF
               </h3>
-              <p className="mt-1 text-sm text-[#1a2332]/70">
+              <p className="mt-0.5 text-xs text-[#1a2332]/70">
                 Drop your research paper
               </p>
             </div>
-            <div className="flex flex-col items-center rounded-xl border border-[#1a2332]/10 bg-white/60 p-6 text-center">
-              <Brain className="h-10 w-10 text-[#1a2332] mb-3" />
-              <h3 className="font-heading font-semibold text-[#1a2332]">
+            <div className="flex flex-col items-center rounded-lg border border-[#1a2332]/10 bg-white/60 p-4 text-center">
+              <Brain className="h-5 w-5 text-[#1a2332] mb-2" />
+              <h3 className="font-heading text-sm font-semibold text-[#1a2332]">
                 AI Analyzes
               </h3>
-              <p className="mt-1 text-sm text-[#1a2332]/70">
+              <p className="mt-0.5 text-xs text-[#1a2332]/70">
                 Gemini extracts key ideas
               </p>
             </div>
-            <div className="flex flex-col items-center rounded-xl border border-[#1a2332]/10 bg-white/60 p-6 text-center">
-              <BookOpen className="h-10 w-10 text-[#1a2332] mb-3" />
-              <h3 className="font-heading font-semibold text-[#1a2332]">
+            <div className="flex flex-col items-center rounded-lg border border-[#1a2332]/10 bg-white/60 p-4 text-center">
+              <BookOpen className="h-5 w-5 text-[#1a2332] mb-2" />
+              <h3 className="font-heading text-sm font-semibold text-[#1a2332]">
                 Learn & Quiz
               </h3>
-              <p className="mt-1 text-sm text-[#1a2332]/70">
+              <p className="mt-0.5 text-xs text-[#1a2332]/70">
                 Summary, concepts, and quiz
               </p>
             </div>
+          </div>
+          <div className="mt-6">
+            <FileUpload onResult={handleResult} />
           </div>
         </motion.section>
 
